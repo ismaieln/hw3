@@ -225,3 +225,81 @@ footer {
   font-style: italic;
   color: antiquewhite;
 }
+
+/*to appear on taplet screen*/
+@media only screen and (max-width: 1130px) {
+  .container-all {
+    width: 100%;
+    margin: auto;
+    padding: 10px;
+  }
+  .view {
+    display: none;
+  }
+  .nav-div,
+  .lower-nav,
+  .second-div {
+    position: relative;
+    left: auto;
+    top: auto;
+    width: 100%;
+  }
+  .grid-down,
+  .last,
+  .above-footer,
+  .foot-conect {
+    max-width: 100%;
+    flex-wrap: wrap;
+    padding: 10px;
+  }
+  .grid-part,
+  .af-item {
+    max-width: 46%;
+  }
+  .business,
+  .last-item {
+    max-width: 100%;
+  }
+  nav,
+  footer {
+    padding: unset;
+  }
+  h2 {
+    font-size: 1.5em;
+  }
+  .af-item {
+    margin-top: 20px;
+  }
+  .foots {
+    grid-template-columns: 6fr 6fr;
+  }
+  .ls {
+    grid-column: 1 / 2;
+  }
+  /*.ls img {
+    width: 40px;
+    height: 16px;
+  }*/
+}
+
+/*to appear on mobile phones*/
+@media only screen and (max-width: 700px) {
+  img,
+  .foot-container,
+  .business,
+  .grid-part,
+  .last-item {
+    max-width: 100%;
+  }
+
+  .above-footer,
+  .foot-conect {
+    flex-direction: column;
+  }
+  .foots {
+    grid-template-columns: 12fr;
+  }
+  footer {
+    padding-left: 10px;
+  }
+}
