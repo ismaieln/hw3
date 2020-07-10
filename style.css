@@ -197,7 +197,7 @@ footer {
 .pad {
   padding-bottom: 20px;
 }
-.foot-conect-item {
+.foot-icons {
   display: flex;
   justify-content: flex-start;
   align-items: center;
@@ -206,16 +206,18 @@ footer {
   grid-column: 4 / 5;
 }
 
-.foot-conect-item img {
+.foot-icons img {
   width: 16px;
   height: 16px;
   margin-right: 15px;
 }
+
 .ls img {
   width: 120px;
   height: 40px;
 }
 
+/*last line at footer*/
 .copy {
   text-align: center;
   background-color: rgb(15, 15, 15);
@@ -256,6 +258,9 @@ footer {
   .af-item {
     max-width: 46%;
   }
+  .image-tap {
+    min-width: 100%;
+  }
   .business,
   .last-item {
     max-width: 100%;
@@ -286,9 +291,7 @@ footer {
 @media only screen and (max-width: 700px) {
   img,
   .foot-container,
-  .business,
-  .grid-part,
-  .last-item {
+  .grid-part {
     max-width: 100%;
   }
 
